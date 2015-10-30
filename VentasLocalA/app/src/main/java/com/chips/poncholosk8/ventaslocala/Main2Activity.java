@@ -43,7 +43,9 @@ public class Main2Activity extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            Intent i = new Intent(this,MainActivity.class );
+            startActivity(i);
+            finish();
         }
     }
 
@@ -77,12 +79,20 @@ public class Main2Activity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
         View ventas=(View) findViewById(R.id.layoutventas);
+        View abonos=(View) findViewById(R.id.layoutabonos);
+        View consultas=(View) findViewById(R.id.layoutconsultas);
         if (id == R.id.nav_Ventas) {
             ventas.setVisibility(View.VISIBLE);
+            abonos.setVisibility(View.INVISIBLE);
+            consultas.setVisibility(View.INVISIBLE);
         } else if (id == R.id.nav_Abonos) {
             ventas.setVisibility(View.INVISIBLE);
+            abonos.setVisibility(View.VISIBLE);
+            consultas.setVisibility(View.INVISIBLE);
         } else if (id == R.id.nav_Consultas) {
             ventas.setVisibility(View.INVISIBLE);
+            abonos.setVisibility(View.INVISIBLE);
+            consultas.setVisibility(View.VISIBLE);
 
         } else if (id == R.id.nav_Salir) {
             Intent i = new Intent(this,MainActivity.class );
