@@ -76,68 +76,13 @@ public class Main2Activity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-        Layout ventas=new Layout(R.e) {
-            @Override
-            public int getLineCount() {
-                return 0;
-            }
-
-            @Override
-            public int getLineTop(int line) {
-                return 0;
-            }
-
-            @Override
-            public int getLineDescent(int line) {
-                return 0;
-            }
-
-            @Override
-            public int getLineStart(int line) {
-                return 0;
-            }
-
-            @Override
-            public int getParagraphDirection(int line) {
-                return 0;
-            }
-
-            @Override
-            public boolean getLineContainsTab(int line) {
-                return false;
-            }
-
-            @Override
-            public Directions getLineDirections(int line) {
-                return null;
-            }
-
-            @Override
-            public int getTopPadding() {
-                return 0;
-            }
-
-            @Override
-            public int getBottomPadding() {
-                return 0;
-            }
-
-            @Override
-            public int getEllipsisStart(int line) {
-                return 0;
-            }
-
-            @Override
-            public int getEllipsisCount(int line) {
-                return 0;
-            }
-        }
+        View ventas=(View) findViewById(R.id.layoutventas);
         if (id == R.id.nav_Ventas) {
-
+            ventas.setVisibility(View.VISIBLE);
         } else if (id == R.id.nav_Abonos) {
-
+            ventas.setVisibility(View.INVISIBLE);
         } else if (id == R.id.nav_Consultas) {
-
+            ventas.setVisibility(View.INVISIBLE);
 
         } else if (id == R.id.nav_Salir) {
             Intent i = new Intent(this,MainActivity.class );

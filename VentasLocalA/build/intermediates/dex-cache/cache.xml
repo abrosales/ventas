@@ -2,39 +2,39 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Poncholosk8\AndroidStudioProjects\VentasLocalA\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="C:\Users\Poncholosk8\AndroidStudioProjects\VentasLocalA\app\build\intermediates\pre-dexed\debug\classes-7a6db0aa516f01059ea72555a0ad705588470985.jar" />
-    </item>
-    <item
-        jar="C:\Users\Poncholosk8\AndroidStudioProjects\VentasLocalA\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="C:\Users\Poncholosk8\AndroidStudioProjects\VentasLocalA\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1-68297ebc722d009ca6599d5630bc195828cbfabc.jar" />
-    </item>
-    <item
-        jar="C:\Users\Poncholosk8\AndroidStudioProjects\VentasLocalA\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="C:\Users\Poncholosk8\AndroidStudioProjects\VentasLocalA\app\build\intermediates\pre-dexed\debug\classes-4111fb98170c48735501c0d78480e802d6148112.jar" />
-    </item>
-    <item
-        jar="C:\Users\Poncholosk8\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="C:\Users\Poncholosk8\AndroidStudioProjects\VentasLocalA\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-f80deac71f7443ab7209428bf5f825cfd8db2d87.jar" />
-    </item>
-    <item
-        jar="C:\Users\Poncholosk8\AndroidStudioProjects\VentasLocalA\app\build\intermediates\exploded-aar\com.android.support\design\23.0.1\jars\classes.jar"
+        jar="C:\Users\Alfonso G Baeza R\Desktop\ventas\VentasLocalA\app\build\intermediates\exploded-aar\com.android.support\design\23.0.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
-        <dex dex="C:\Users\Poncholosk8\AndroidStudioProjects\VentasLocalA\app\build\intermediates\pre-dexed\debug\classes-3c993e988a196cee756b9f1162598f3f96434e8e.jar" />
+        <dex dex="C:\Users\Alfonso G Baeza R\Desktop\ventas\VentasLocalA\app\build\intermediates\pre-dexed\debug\classes-f09ccd784dfef13a08e80b3bc396577a4093f9a4.jar" />
+    </item>
+    <item
+        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="C:\Users\Alfonso G Baeza R\Desktop\ventas\VentasLocalA\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-6caa1fe4da30cf2cc1676a54cb9890359b7ae5e4.jar" />
+    </item>
+    <item
+        jar="C:\Users\Alfonso G Baeza R\Desktop\ventas\VentasLocalA\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="C:\Users\Alfonso G Baeza R\Desktop\ventas\VentasLocalA\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1-2256adf6516e31d0d8ab40f09427079036422ef4.jar" />
+    </item>
+    <item
+        jar="C:\Users\Alfonso G Baeza R\Desktop\ventas\VentasLocalA\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="C:\Users\Alfonso G Baeza R\Desktop\ventas\VentasLocalA\app\build\intermediates\pre-dexed\debug\classes-ffd16ba6b1a2acaf158699bdb8e70861e36d7517.jar" />
+    </item>
+    <item
+        jar="C:\Users\Alfonso G Baeza R\Desktop\ventas\VentasLocalA\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="C:\Users\Alfonso G Baeza R\Desktop\ventas\VentasLocalA\app\build\intermediates\pre-dexed\debug\classes-1623121edef1720c4d581b8a4a4aea6a94ca18ed.jar" />
     </item>
 
 </items>
