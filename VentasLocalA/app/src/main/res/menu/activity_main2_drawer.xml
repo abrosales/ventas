@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_Ventas" android:icon="@mipmap/venta"
+            android:title="Ventas" />
+        <item android:id="@+id/nav_Abonos" android:icon="@mipmap/abono"
+            android:title="Abonos" />
+        <item android:id="@+id/nav_Consultas" android:icon="@mipmap/consulta"
+            android:title="Consultas" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item android:id="@+id/nav_Salir" android:icon="@mipmap/salir"
+                android:title="Salir" />
+
+        </menu>
+    </item>
+
+</menu>
