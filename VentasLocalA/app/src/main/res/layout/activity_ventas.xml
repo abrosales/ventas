@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:weightSum="1"
     android:id="@+id/layoutventas"
-    android:visibility="invisible">
+    android:visibility="visible">
 
     <TextView
         android:layout_width="wrap_content"
@@ -12,6 +12,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Cliente"
         android:id="@+id/textView2"
+        android:textColor="@color/colornav"
         android:layout_gravity="center_horizontal"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -22,6 +23,7 @@
         android:layout_height="wrap_content"
         android:text="Registrar venta"
         android:id="@+id/button"
+        android:textColor="@color/colornav"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="197dp" />

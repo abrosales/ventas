@@ -35,6 +35,7 @@ public class Main2Activity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        super.setTitle("Ventas");
     }
 
     @Override
@@ -43,7 +44,9 @@ public class Main2Activity extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            Intent i = new Intent(this,MainActivity.class );
+            startActivity(i);
+            finish();
         }
     }
 
@@ -60,12 +63,31 @@ public class Main2Activity extends AppCompatActivity
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
+        View cliente=(View) findViewById(R.id.layoutclientes);
+        View producto=(View) findViewById(R.id.layoutproductos);
+        View ventas=(View) findViewById(R.id.layoutventas);
+        View abonos=(View) findViewById(R.id.layoutabonos);
+        View consultas=(View) findViewById(R.id.layoutconsultas);
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             Intent i = new Intent(this,MainActivity.class );
             startActivity(i);
             finish();
+        }else if(id == R.id.Regclientes){
+            cliente.setVisibility(View.VISIBLE);
+            producto.setVisibility(View.INVISIBLE);
+            ventas.setVisibility(View.INVISIBLE);
+            abonos.setVisibility(View.INVISIBLE);
+            consultas.setVisibility(View.VISIBLE);
+            super.setTitle("Clientes");
+
+        }else if(id == R.id.Regproducto){
+            producto.setVisibility(View.VISIBLE);
+            cliente.setVisibility(View.INVISIBLE);
+            ventas.setVisibility(View.INVISIBLE);
+            abonos.setVisibility(View.INVISIBLE);
+            consultas.setVisibility(View.VISIBLE);
+            super.setTitle("Productos");
         }
 
         return super.onOptionsItemSelected(item);
@@ -77,12 +99,23 @@ public class Main2Activity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
         View ventas=(View) findViewById(R.id.layoutventas);
+        View abonos=(View) findViewById(R.id.layoutabonos);
+        View consultas=(View) findViewById(R.id.layoutconsultas);
         if (id == R.id.nav_Ventas) {
             ventas.setVisibility(View.VISIBLE);
+            abonos.setVisibility(View.INVISIBLE);
+            consultas.setVisibility(View.INVISIBLE);
+            super.setTitle("Ventas");
         } else if (id == R.id.nav_Abonos) {
             ventas.setVisibility(View.INVISIBLE);
+            abonos.setVisibility(View.VISIBLE);
+            consultas.setVisibility(View.INVISIBLE);
+            super.setTitle("Abonos");
         } else if (id == R.id.nav_Consultas) {
             ventas.setVisibility(View.INVISIBLE);
+            abonos.setVisibility(View.INVISIBLE);
+            consultas.setVisibility(View.VISIBLE);
+            super.setTitle("Consultas");
 
         } else if (id == R.id.nav_Salir) {
             Intent i = new Intent(this,MainActivity.class );
