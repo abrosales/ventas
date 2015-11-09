@@ -31,9 +31,11 @@
         android:text="Cantidad"
         android:id="@+id/txt_cantida_producto"
         android:layout_gravity="center_horizontal"
-        android:layout_below="@+id/txt_descripcion_producto"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp" />
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="130dp"
@@ -41,7 +43,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/txt_cantidad_producto"
         android:layout_below="@+id/txt_cantida_producto"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -49,9 +52,9 @@
         android:text="Talla"
         android:id="@+id/lbl_talla_producto"
         android:layout_gravity="center_horizontal"
-        android:layout_below="@+id/txt_cantidad_producto"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="23dp" />
+        android:layout_above="@+id/txt_cantidad_producto"
+        android:layout_toLeftOf="@+id/btn_agregar_producto"
+        android:layout_toStartOf="@+id/btn_agregar_producto" />
 
     <EditText
         android:layout_width="130dp"
@@ -59,7 +62,10 @@
         android:id="@+id/txt_talla_producto"
         android:layout_gravity="center_horizontal"
         android:layout_below="@+id/lbl_talla_producto"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignRight="@+id/lbl_descripcion_producto"
+        android:layout_alignEnd="@+id/lbl_descripcion_producto"
+        android:layout_marginRight="36dp"
+        android:layout_marginEnd="36dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -67,9 +73,9 @@
         android:text="Costo"
         android:id="@+id/lbl_costo_producto"
         android:layout_gravity="center_horizontal"
-        android:layout_below="@+id/txt_talla_producto"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp" />
+        android:layout_above="@+id/txt_talla_producto"
+        android:layout_toRightOf="@+id/btn_agregar_producto"
+        android:layout_toEndOf="@+id/btn_agregar_producto" />
 
     <EditText
         android:layout_width="130dp"
@@ -78,8 +84,9 @@
         android:ems="10"
         android:id="@+id/txt_costo_producto"
         android:layout_gravity="center_horizontal"
-        android:layout_below="@+id/lbl_costo_producto"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/Lbl_precio_producto"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -87,9 +94,11 @@
         android:text="Precio"
         android:id="@+id/Lbl_precio_producto"
         android:layout_gravity="center_horizontal"
-        android:layout_below="@+id/txt_costo_producto"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp" />
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_above="@+id/txt_precio_producto"
+        android:layout_alignRight="@+id/txt_costo_producto"
+        android:layout_alignEnd="@+id/txt_costo_producto" />
 
     <EditText
         android:layout_width="130dp"
@@ -98,8 +107,11 @@
         android:ems="10"
         android:id="@+id/txt_precio_producto"
         android:layout_gravity="center_horizontal"
-        android:layout_below="@+id/Lbl_precio_producto"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/lbl_costo_producto"
+        android:layout_alignLeft="@+id/lbl_descripcion_producto"
+        android:layout_alignStart="@+id/lbl_descripcion_producto"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -107,7 +119,7 @@
         android:text="Agregar"
         android:id="@+id/btn_agregar_producto"
         android:layout_gravity="center_horizontal"
-        android:layout_below="@+id/txt_precio_producto"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

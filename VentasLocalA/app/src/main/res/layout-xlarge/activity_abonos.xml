@@ -13,7 +13,9 @@
         android:id="@+id/lbl_clienteabonos"
         android:layout_alignParentTop="true"
         android:layout_alignRight="@+id/lbl_abonoabono"
-        android:layout_alignEnd="@+id/lbl_abonoabono" />
+        android:layout_alignEnd="@+id/lbl_abonoabono"
+        android:layout_marginTop="147dp"
+        android:textSize="60dp"/>
 
     <AutoCompleteTextView
         android:layout_width="wrap_content"
@@ -22,7 +24,8 @@
         android:id="@+id/txt_clienteabono"
         android:textColor="@color/colornav"
         android:layout_below="@+id/lbl_clienteabonos"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textSize="60dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -31,9 +34,10 @@
         android:text="Abono"
         android:id="@+id/lbl_abonoabono"
         android:textColor="@color/colornav"
+        android:layout_marginTop="182dp"
         android:layout_below="@+id/txt_clienteabono"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp" />
+        android:textSize="60dp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -43,16 +47,18 @@
         android:textColor="@color/colornav"
         android:id="@+id/editText"
         android:layout_below="@+id/lbl_abonoabono"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textSize="60dp"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Registrar abono"
         android:id="@+id/btn_registroabono"
+        android:textColor="@color/colornav"
+        android:layout_marginTop="273dp"
         android:layout_below="@+id/editText"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/colornav"
-        android:layout_marginTop="63dp" />
+        android:textSize="60dp"/>
 
 </RelativeLayout>

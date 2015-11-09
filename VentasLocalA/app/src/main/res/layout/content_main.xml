@@ -20,6 +20,7 @@
         android:layout_centerHorizontal="true" />
 
     <EditText
+        android:inputType="textPersonName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txt_usuario"
@@ -27,7 +28,8 @@
         android:layout_alignLeft="@+id/txt_contraseña"
         android:layout_alignStart="@+id/txt_contraseña"
         android:layout_alignRight="@+id/txt_contraseña"
-        android:layout_alignEnd="@+id/txt_contraseña" />
+        android:layout_alignEnd="@+id/txt_contraseña"
+        android:textAlignment="center"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -57,5 +59,6 @@
         android:ems="10"
         android:id="@+id/txt_contraseña"
         android:layout_below="@+id/lbl_contraseña"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"/>
 </RelativeLayout>
