@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="invisible"
+    android:id="@+id/layoutabonos">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Cliente"
+        android:textColor="@color/colornav"
+        android:id="@+id/lbl_clienteabonos"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/lbl_abonoabono"
+        android:layout_alignEnd="@+id/lbl_abonoabono" />
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/txt_clienteabono"
+        android:textColor="@color/colornav"
+        android:layout_below="@+id/lbl_clienteabonos"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Abono"
+        android:id="@+id/lbl_abonoabono"
+        android:textColor="@color/colornav"
+        android:layout_below="@+id/txt_clienteabono"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:textColor="@color/colornav"
+        android:id="@+id/editText"
+        android:layout_below="@+id/lbl_abonoabono"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar abono"
+        android:id="@+id/btn_registroabono"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colornav"
+        android:layout_marginTop="63dp" />
+
+</RelativeLayout>

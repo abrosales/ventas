@@ -7,6 +7,7 @@
     android:visibility="invisible">
 
     <TextView
+        android:textSize="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Descripción"
@@ -17,6 +18,7 @@
         android:layout_centerHorizontal="true" />
 
     <EditText
+        android:textSize="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/txt_descripcion_producto"
@@ -26,88 +28,101 @@
         android:layout_alignParentStart="true" />
 
     <TextView
+        android:textSize="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cantidad"
         android:id="@+id/txt_cantida_producto"
         android:layout_gravity="center_horizontal"
         android:layout_below="@+id/txt_descripcion_producto"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp" />
+        android:layout_centerHorizontal="true" />
 
     <EditText
+        android:textSize="50dp"
         android:layout_width="130dp"
         android:layout_gravity="center_horizontal"
         android:layout_height="wrap_content"
         android:id="@+id/txt_cantidad_producto"
         android:layout_below="@+id/txt_cantida_producto"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignLeft="@+id/Lbl_precio_producto"
+        android:layout_alignStart="@+id/Lbl_precio_producto" />
 
     <TextView
+        android:textSize="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Talla"
         android:id="@+id/lbl_talla_producto"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
         android:layout_below="@+id/txt_cantidad_producto"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="23dp" />
+        android:layout_centerHorizontal="true" />
 
     <EditText
+        android:textSize="50dp"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:id="@+id/txt_talla_producto"
         android:layout_gravity="center_horizontal"
         android:layout_below="@+id/lbl_talla_producto"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignLeft="@+id/lbl_talla_producto"
+        android:layout_alignStart="@+id/lbl_talla_producto" />
 
     <TextView
+        android:textSize="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Costo"
         android:id="@+id/lbl_costo_producto"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="55dp"
         android:layout_below="@+id/txt_talla_producto"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp" />
+        android:layout_centerHorizontal="true" />
 
     <EditText
+        android:textSize="50dp"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:ems="10"
         android:id="@+id/txt_costo_producto"
         android:layout_gravity="center_horizontal"
-        android:layout_below="@+id/lbl_costo_producto"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/Lbl_precio_producto"
+        android:layout_alignRight="@+id/Lbl_precio_producto"
+        android:layout_alignEnd="@+id/Lbl_precio_producto" />
 
     <TextView
+        android:textSize="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Precio"
         android:id="@+id/Lbl_precio_producto"
         android:layout_gravity="center_horizontal"
-        android:layout_below="@+id/txt_costo_producto"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp" />
+        android:layout_marginTop="72dp"
+        android:layout_below="@+id/txt_precio_producto"
+        android:layout_centerHorizontal="true" />
 
     <EditText
+        android:textSize="50dp"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:ems="10"
         android:id="@+id/txt_precio_producto"
         android:layout_gravity="center_horizontal"
-        android:layout_below="@+id/Lbl_precio_producto"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/lbl_costo_producto"
+        android:layout_alignLeft="@+id/txt_talla_producto"
+        android:layout_alignStart="@+id/txt_talla_producto" />
 
     <Button
+        android:textSize="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Agregar"
         android:id="@+id/btn_agregar_producto"
         android:layout_gravity="center_horizontal"
-        android:layout_below="@+id/txt_precio_producto"
+        android:layout_marginBottom="72dp"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

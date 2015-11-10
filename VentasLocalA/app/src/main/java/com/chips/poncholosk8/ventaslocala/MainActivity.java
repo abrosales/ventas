@@ -9,6 +9,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,9 +46,18 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
     public void onClickentrar(View view){
-        Intent i = new Intent(this,Main2Activity.class );
-        startActivity(i);
-        finish();
+        TextView usuario= (TextView)findViewById(R.id.txt_usuario);
+        TextView password= (TextView)findViewById(R.id.txt_contraseña);
+        String us=usuario.getText().toString();
+        String cr=password.getText().toString();
 
+        if (us.equals("ragusita") && cr.equals("ragusitaitza")) {
+            Intent i = new Intent(this, Main2Activity.class);
+            startActivity(i);
+            finish();
+            Toast.makeText(this, "Bienvenido "+us, Toast.LENGTH_LONG).show();
+        }else {
+            Toast.makeText(this, "Usuario o Contraseña no validos", Toast.LENGTH_SHORT).show();
+        }
     }
 }
